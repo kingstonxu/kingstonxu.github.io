@@ -3,6 +3,11 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -157,7 +162,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: #3663fe;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -318,6 +323,11 @@ section h3.section-subheading {
   right: 0;
 }
 
+#portfolio .col-centered.portfolio-item, #other .col-centered.portfolio-item{
+  float: none;
+  margin: 0 auto;
+}
+
 #portfolio .portfolio-item .portfolio-link, #other .portfolio-item .portfolio-link {
   display: block;
   position: relative;
@@ -380,9 +390,15 @@ section h3.section-subheading {
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item, #other .portfolio-item {
-    margin: 0 0 30px;
+    margin: 0 0 30px;  
+  }
+
+  #portfolio .col-centered.portfolio-item, #other .col-centered.portfolio-item{
+    float: none;
+    margin: 0 auto;
   }
 }
+
 .timeline {
   list-style: none;
   padding: 0;
@@ -536,7 +552,7 @@ section h3.section-subheading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0px 20px 20px 100px;
   }
   .timeline > li .timeline-image {
     width: 170px;
